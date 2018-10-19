@@ -1,0 +1,1 @@
+C:\Code\HW\ConsoleApplication1\HW.UnitOfWork\obj\Debug\HW.UnitOfWork.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Service.HW.dll
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Service.HW.pdb
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Shared.Service.dll
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Shared.UnitOfWork.dll
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Shared.Service.pdb
+C:\Code\HW\ConsoleApplication1\Service.HW\bin\Debug\Shared.UnitOfWork.pdb
+C:\Code\HW\ConsoleApplication1\Service.HW\obj\Debug\Service.HW.csprojResolveAssemblyReference.cache
+C:\Code\HW\ConsoleApplication1\Service.HW\obj\Debug\Service.HW.dll
+C:\Code\HW\ConsoleApplication1\Service.HW\obj\Debug\Service.HW.pdb
