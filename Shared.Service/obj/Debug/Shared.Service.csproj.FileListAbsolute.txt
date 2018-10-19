@@ -1,0 +1,4 @@
+C:\Code\HW\ConsoleApplication1\Shared.Service\bin\Debug\Shared.Service.dll
+C:\Code\HW\ConsoleApplication1\Shared.Service\bin\Debug\Shared.Service.pdb
+C:\Code\HW\ConsoleApplication1\Shared.Service\obj\Debug\Shared.Service.dll
+C:\Code\HW\ConsoleApplication1\Shared.Service\obj\Debug\Shared.Service.pdb
