@@ -1,0 +1,4 @@
+C:\Code\HW\ConsoleApplication1\Shared.UnitOfWork\bin\Debug\Shared.UnitOfWork.dll
+C:\Code\HW\ConsoleApplication1\Shared.UnitOfWork\bin\Debug\Shared.UnitOfWork.pdb
+C:\Code\HW\ConsoleApplication1\Shared.UnitOfWork\obj\Debug\Shared.UnitOfWork.dll
+C:\Code\HW\ConsoleApplication1\Shared.UnitOfWork\obj\Debug\Shared.UnitOfWork.pdb
