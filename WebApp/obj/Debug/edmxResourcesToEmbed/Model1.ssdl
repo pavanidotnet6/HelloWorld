@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ASAPSQLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="IAA">
+    <Key>
+      <PropertyRef Name="IAA_Corporate_Name" />
+    </Key>
+    <Property Name="IAA_Corporate_Name" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Address_Line_1" Type="varchar" MaxLength="40" />
+    <Property Name="Address_Line_2" Type="varchar" MaxLength="40" />
+    <Property Name="City_Name" Type="varchar" MaxLength="40" />
+    <Property Name="State_Abbreviation" Type="char" MaxLength="3" />
+    <Property Name="Country_Abbreviation" Type="char" MaxLength="2" />
+    <Property Name="Zip_Code" Type="varchar" MaxLength="9" />
+    <Property Name="County_Name" Type="varchar" MaxLength="30" />
+    <Property Name="Phone_Number_1" Type="decimal" Precision="11" Scale="0" />
+    <Property Name="Phone_Number_2" Type="decimal" Precision="11" Scale="0" />
+    <Property Name="Fax_Number" Type="decimal" Precision="11" Scale="0" />
+    <Property Name="EMail_Address" Type="varchar" MaxLength="60" />
+    <Property Name="Title_Mailing_Allowance_Days" Type="smallint" />
+    <Property Name="Scanner_Label_Default_Quantity" Type="smallint" />
+    <Property Name="Title_Problem_Reminder_Days" Type="smallint" />
+    <Property Name="Evenings_Before_Lockdown" Type="smallint" Nullable="false" />
+    <Property Name="Update_User_ID" Type="int" />
+    <Property Name="Report_Definition_Directory_Name" Type="varchar" MaxLength="253" />
+    <Property Name="Report_Retention_Days" Type="int" />
+    <Property Name="Report_Directory_Name" Type="varchar" MaxLength="253" />
+    <Property Name="Report_Server_Name" Type="varchar" MaxLength="14" />
+    <Property Name="Title_Template_Directory_Name" Type="varchar" MaxLength="253" />
+    <Property Name="NICB_Code" Type="char" MaxLength="9" />
+    <Property Name="Notification_Hours_Before_Lockdown" Type="int" Nullable="false" />
+    <Property Name="Update_DateTime" Type="datetime" />
+    <Property Name="EDI_Outbound_ABA_Number" Type="varchar" MaxLength="9" />
+    <Property Name="EDI_Outbound_Account_Number" Type="varchar" MaxLength="19" />
+    <Property Name="Log_Host" Type="varchar" MaxLength="100" />
+    <Property Name="Log_Port" Type="int" />
+    <Property Name="Scanner_Label_Font" Type="varchar" MaxLength="40" />
+    <Property Name="Scanner_Label_Font_Size" Type="int" />
+    <Property Name="Scanner_Label_Zebra_Font_Size" Type="int" />
+    <Property Name="SendFax_Ind" Type="bit" Nullable="false" />
+    <Property Name="Corporate_URL" Type="varchar" MaxLength="256" />
+    <Property Name="AMS_URL" Type="varchar" MaxLength="256" />
+    <Property Name="Affiliate_Title_Processing_Days" Type="smallint" />
+    <Property Name="Archive_Server_Database" Type="varchar" MaxLength="256" />
+    <Property Name="Specialty_BCC_EMail" Type="varchar" MaxLength="64" />
+    <Property Name="Affiliate_Generic_Buyer_ID" Type="int" />
+    <Property Name="Specialty_Affiliate_Number" Type="int" />
+    <Property Name="Hold_Release_Days" Type="int" />
+    <Property Name="ECI_FTP_OutPath" Type="varchar" MaxLength="200" />
+    <Property Name="ECI_FTP_InPath" Type="varchar" MaxLength="200" />
+    <Property Name="IBF_Min_Bid_Threshold" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="Auction_Proxy_Close_Offset" Type="int" />
+    <Property Name="Min_Bid_Match_Threshold" Type="smallint" />
+    <Property Name="Provider_Payment_Report_Directory" Type="varchar" MaxLength="500" />
+    <Property Name="Min_Credit_Card_Limit" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="Max_Credit_Card_Limit" Type="decimal" Precision="11" Scale="2" />
+  </EntityType>
+  <EntityType Name="Sample_Table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sample_Description" Type="varchar" MaxLength="255" />
+    <Property Name="Sample_Column" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Sample_Column_2" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ASAPSQLModelStoreContainer">
+    <EntitySet Name="IAA" EntityType="Self.IAA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sample_Table" EntityType="Self.Sample_Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

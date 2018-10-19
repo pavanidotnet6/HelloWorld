@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ASAPSQLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="IAA">
+    <Key>
+      <PropertyRef Name="IAA_Corporate_Name" />
+    </Key>
+    <Property Name="IAA_Corporate_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address_Line_1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Address_Line_2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="City_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="State_Abbreviation" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="Country_Abbreviation" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="Zip_Code" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="County_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Phone_Number_1" Type="Decimal" Precision="11" Scale="0" />
+    <Property Name="Phone_Number_2" Type="Decimal" Precision="11" Scale="0" />
+    <Property Name="Fax_Number" Type="Decimal" Precision="11" Scale="0" />
+    <Property Name="EMail_Address" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Title_Mailing_Allowance_Days" Type="Int16" />
+    <Property Name="Scanner_Label_Default_Quantity" Type="Int16" />
+    <Property Name="Title_Problem_Reminder_Days" Type="Int16" />
+    <Property Name="Evenings_Before_Lockdown" Type="Int16" Nullable="false" />
+    <Property Name="Update_User_ID" Type="Int32" />
+    <Property Name="Report_Definition_Directory_Name" Type="String" MaxLength="253" FixedLength="false" Unicode="false" />
+    <Property Name="Report_Retention_Days" Type="Int32" />
+    <Property Name="Report_Directory_Name" Type="String" MaxLength="253" FixedLength="false" Unicode="false" />
+    <Property Name="Report_Server_Name" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Title_Template_Directory_Name" Type="String" MaxLength="253" FixedLength="false" Unicode="false" />
+    <Property Name="NICB_Code" Type="String" MaxLength="9" FixedLength="true" Unicode="false" />
+    <Property Name="Notification_Hours_Before_Lockdown" Type="Int32" Nullable="false" />
+    <Property Name="Update_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="EDI_Outbound_ABA_Number" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="EDI_Outbound_Account_Number" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Name="Log_Host" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Log_Port" Type="Int32" />
+    <Property Name="Scanner_Label_Font" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Scanner_Label_Font_Size" Type="Int32" />
+    <Property Name="Scanner_Label_Zebra_Font_Size" Type="Int32" />
+    <Property Name="SendFax_Ind" Type="Boolean" Nullable="false" />
+    <Property Name="Corporate_URL" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="AMS_URL" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Affiliate_Title_Processing_Days" Type="Int16" />
+    <Property Name="Archive_Server_Database" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Specialty_BCC_EMail" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Affiliate_Generic_Buyer_ID" Type="Int32" />
+    <Property Name="Specialty_Affiliate_Number" Type="Int32" />
+    <Property Name="Hold_Release_Days" Type="Int32" />
+    <Property Name="ECI_FTP_OutPath" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ECI_FTP_InPath" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IBF_Min_Bid_Threshold" Type="Decimal" Precision="11" Scale="2" Nullable="false" />
+    <Property Name="Auction_Proxy_Close_Offset" Type="Int32" />
+    <Property Name="Min_Bid_Match_Threshold" Type="Int16" />
+    <Property Name="Provider_Payment_Report_Directory" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Min_Credit_Card_Limit" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="Max_Credit_Card_Limit" Type="Decimal" Precision="11" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="ASAPSQLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IAAs" EntityType="Self.IAA" />
+    <EntitySet Name="Sample_Table" EntityType="ASAPSQLModel.Sample_Table" />
+  </EntityContainer>
+  <EntityType Name="Sample_Table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sample_Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Sample_Column" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Sample_Column_2" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

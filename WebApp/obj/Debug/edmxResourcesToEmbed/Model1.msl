@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ASAPSQLModelStoreContainer" CdmEntityContainer="ASAPSQLEntities">
+    <EntitySetMapping Name="IAAs">
+      <EntityTypeMapping TypeName="ASAPSQLModel.IAA">
+        <MappingFragment StoreEntitySet="IAA">
+          <ScalarProperty Name="IAA_Corporate_Name" ColumnName="IAA_Corporate_Name" />
+          <ScalarProperty Name="Address_Line_1" ColumnName="Address_Line_1" />
+          <ScalarProperty Name="Address_Line_2" ColumnName="Address_Line_2" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_Abbreviation" ColumnName="State_Abbreviation" />
+          <ScalarProperty Name="Country_Abbreviation" ColumnName="Country_Abbreviation" />
+          <ScalarProperty Name="Zip_Code" ColumnName="Zip_Code" />
+          <ScalarProperty Name="County_Name" ColumnName="County_Name" />
+          <ScalarProperty Name="Phone_Number_1" ColumnName="Phone_Number_1" />
+          <ScalarProperty Name="Phone_Number_2" ColumnName="Phone_Number_2" />
+          <ScalarProperty Name="Fax_Number" ColumnName="Fax_Number" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Title_Mailing_Allowance_Days" ColumnName="Title_Mailing_Allowance_Days" />
+          <ScalarProperty Name="Scanner_Label_Default_Quantity" ColumnName="Scanner_Label_Default_Quantity" />
+          <ScalarProperty Name="Title_Problem_Reminder_Days" ColumnName="Title_Problem_Reminder_Days" />
+          <ScalarProperty Name="Evenings_Before_Lockdown" ColumnName="Evenings_Before_Lockdown" />
+          <ScalarProperty Name="Update_User_ID" ColumnName="Update_User_ID" />
+          <ScalarProperty Name="Report_Definition_Directory_Name" ColumnName="Report_Definition_Directory_Name" />
+          <ScalarProperty Name="Report_Retention_Days" ColumnName="Report_Retention_Days" />
+          <ScalarProperty Name="Report_Directory_Name" ColumnName="Report_Directory_Name" />
+          <ScalarProperty Name="Report_Server_Name" ColumnName="Report_Server_Name" />
+          <ScalarProperty Name="Title_Template_Directory_Name" ColumnName="Title_Template_Directory_Name" />
+          <ScalarProperty Name="NICB_Code" ColumnName="NICB_Code" />
+          <ScalarProperty Name="Notification_Hours_Before_Lockdown" ColumnName="Notification_Hours_Before_Lockdown" />
+          <ScalarProperty Name="Update_DateTime" ColumnName="Update_DateTime" />
+          <ScalarProperty Name="EDI_Outbound_ABA_Number" ColumnName="EDI_Outbound_ABA_Number" />
+          <ScalarProperty Name="EDI_Outbound_Account_Number" ColumnName="EDI_Outbound_Account_Number" />
+          <ScalarProperty Name="Log_Host" ColumnName="Log_Host" />
+          <ScalarProperty Name="Log_Port" ColumnName="Log_Port" />
+          <ScalarProperty Name="Scanner_Label_Font" ColumnName="Scanner_Label_Font" />
+          <ScalarProperty Name="Scanner_Label_Font_Size" ColumnName="Scanner_Label_Font_Size" />
+          <ScalarProperty Name="Scanner_Label_Zebra_Font_Size" ColumnName="Scanner_Label_Zebra_Font_Size" />
+          <ScalarProperty Name="SendFax_Ind" ColumnName="SendFax_Ind" />
+          <ScalarProperty Name="Corporate_URL" ColumnName="Corporate_URL" />
+          <ScalarProperty Name="AMS_URL" ColumnName="AMS_URL" />
+          <ScalarProperty Name="Affiliate_Title_Processing_Days" ColumnName="Affiliate_Title_Processing_Days" />
+          <ScalarProperty Name="Archive_Server_Database" ColumnName="Archive_Server_Database" />
+          <ScalarProperty Name="Specialty_BCC_EMail" ColumnName="Specialty_BCC_EMail" />
+          <ScalarProperty Name="Affiliate_Generic_Buyer_ID" ColumnName="Affiliate_Generic_Buyer_ID" />
+          <ScalarProperty Name="Specialty_Affiliate_Number" ColumnName="Specialty_Affiliate_Number" />
+          <ScalarProperty Name="Hold_Release_Days" ColumnName="Hold_Release_Days" />
+          <ScalarProperty Name="ECI_FTP_OutPath" ColumnName="ECI_FTP_OutPath" />
+          <ScalarProperty Name="ECI_FTP_InPath" ColumnName="ECI_FTP_InPath" />
+          <ScalarProperty Name="IBF_Min_Bid_Threshold" ColumnName="IBF_Min_Bid_Threshold" />
+          <ScalarProperty Name="Auction_Proxy_Close_Offset" ColumnName="Auction_Proxy_Close_Offset" />
+          <ScalarProperty Name="Min_Bid_Match_Threshold" ColumnName="Min_Bid_Match_Threshold" />
+          <ScalarProperty Name="Provider_Payment_Report_Directory" ColumnName="Provider_Payment_Report_Directory" />
+          <ScalarProperty Name="Min_Credit_Card_Limit" ColumnName="Min_Credit_Card_Limit" />
+          <ScalarProperty Name="Max_Credit_Card_Limit" ColumnName="Max_Credit_Card_Limit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sample_Table">
+      <EntityTypeMapping TypeName="ASAPSQLModel.Sample_Table">
+        <MappingFragment StoreEntitySet="Sample_Table">
+          <ScalarProperty Name="Sample_Column_2" ColumnName="Sample_Column_2" />
+          <ScalarProperty Name="Sample_Column" ColumnName="Sample_Column" />
+          <ScalarProperty Name="Sample_Description" ColumnName="Sample_Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
